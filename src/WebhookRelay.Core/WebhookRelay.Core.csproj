@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>WebhookRelay.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

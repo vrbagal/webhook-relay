@@ -1,0 +1,15 @@
+// // DatabaseProvider controls which database engine is used.
+  // // Valid values: Sqlite (default) | SqlServer | PostgreSQL
+  "DatabaseProvider": "Sqlite",
+
+
+  "ConnectionStrings": {
+    // Sqlite — file stored next to the binary; no server required (default)
+    "DefaultConnection": "Data Source=webhookrelay.db",
+
+    // SqlServer example (uncomment and set DatabaseProvider to SqlServer):
+    // "DefaultConnection": "Server=localhost,1433;Database=WebhookRelay;User Id=sa;Password=YourPassword123!;TrustServerCertificate=true"
+
+    // PostgreSQL example (uncomment and set DatabaseProvider to PostgreSQL):
+    // "DefaultConnection": "Host=localhost;Port=5432;Database=webhookrelay;Username=postgres;Password=YourPassword123!"
+  },

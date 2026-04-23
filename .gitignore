@@ -1,0 +1,41 @@
+# Build output
+bin/
+obj/
+dist/
+out/
+
+# .NET
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
+*.log
+
+# Node
+node_modules/
+.npm
+dashboard/tsconfig.tsbuildinfo
+dashboard/tsconfig.node.tsbuildinfo
+dashboard/vite.config.d.ts
+dashboard/vite.config.js
+
+# Environment / secrets
+.env.local
+.env*.local
+appsettings.Development.json
+
+# dotnet tools
+.config/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+Claude.md

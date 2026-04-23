@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+COPY ["src/WebhookRelay.Api/WebhookRelay.Api.csproj", "src/WebhookRelay.Api/"]
+COPY ["src/WebhookRelay.Core/WebhookRelay.Core.csproj", "src/WebhookRelay.Core/"]
+COPY ["src/WebhookRelay.Infrastructure/WebhookRelay.Infrastructure.csproj", "src/WebhookRelay.Infrastructure/"]
+COPY ["src/WebhookRelay.Shared/WebhookRelay.Shared.csproj", "src/WebhookRelay.Shared/"]
+RUN dotnet restore "src/WebhookRelay.Api/WebhookRelay.Api.csproj"
+
+COPY . .
+RUN dotnet publish "src/WebhookRelay.Api/WebhookRelay.Api.csproj" -c Release -o /app/publish --no-restore
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/publish .
+EXPOSE 80
+ENV ASPNETCORE_URLS=http://+:80
+ENTRYPOINT ["dotnet", "WebhookRelay.Api.dll"]

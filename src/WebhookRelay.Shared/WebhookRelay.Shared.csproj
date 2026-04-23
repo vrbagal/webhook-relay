@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>WebhookRelay.Shared</RootNamespace>
+  </PropertyGroup>
+</Project>

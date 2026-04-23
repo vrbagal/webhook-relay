@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WebhookRelay.Api/WebhookRelay.Api.csproj" />
+    <Project Path="src/WebhookRelay.Core/WebhookRelay.Core.csproj" />
+    <Project Path="src/WebhookRelay.Infrastructure/WebhookRelay.Infrastructure.csproj" />
+    <Project Path="src/WebhookRelay.Shared/WebhookRelay.Shared.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WebhookRelay.Api.Tests/WebhookRelay.Api.Tests.csproj" />
+    <Project Path="tests/WebhookRelay.Core.Tests/WebhookRelay.Core.Tests.csproj" />
+    <Project Path="tests/WebhookRelay.Integration.Tests/WebhookRelay.Integration.Tests.csproj" />
+  </Folder>
+</Solution>
