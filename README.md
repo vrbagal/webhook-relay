@@ -5,6 +5,9 @@ A self-hosted, open-source webhook management platform — a lightweight alterna
 <img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/2d63c1c3-c6cb-46a2-870f-b788e6e8f24c" />
 
 
+
+
+
 WebhookRelay receives webhooks from any provider, verifies HMAC signatures, stores every event, fans out deliveries to multiple target URLs, retries failures with exponential backoff, and provides a React dashboard for inspecting payloads, managing endpoints, and replaying events.
 
 ---
